@@ -1,0 +1,66 @@
+export const FACTIONS = {
+  RED: {
+    id: 'RED',
+    name: 'Crimson Legion',
+    color: '#EF4444',
+    bgGradient: 'from-red-600 to-red-900',
+    borderColor: 'border-red-500',
+    textColor: 'text-red-400',
+    icon: '🔥',
+    motto: 'Through fire, we conquer!',
+  },
+  BLUE: {
+    id: 'BLUE',
+    name: 'Azure Storm',
+    color: '#3B82F6',
+    bgGradient: 'from-blue-600 to-blue-900',
+    borderColor: 'border-blue-500',
+    textColor: 'text-blue-400',
+    icon: '⚡',
+    motto: 'Strike like lightning!',
+  },
+  GREEN: {
+    id: 'GREEN',
+    name: 'Emerald Vanguard',
+    color: '#22C55E',
+    bgGradient: 'from-green-600 to-green-900',
+    borderColor: 'border-green-500',
+    textColor: 'text-green-400',
+    icon: '🌿',
+    motto: 'Nature\'s fury unleashed!',
+  },
+  YELLOW: {
+    id: 'YELLOW',
+    name: 'Golden Phoenix',
+    color: '#EAB308',
+    bgGradient: 'from-yellow-500 to-yellow-800',
+    borderColor: 'border-yellow-500',
+    textColor: 'text-yellow-400',
+    icon: '☀️',
+    motto: 'Rise from the ashes!',
+  },
+  PURPLE: {
+    id: 'PURPLE',
+    name: 'Violet Shadow',
+    color: '#A855F7',
+    bgGradient: 'from-purple-600 to-purple-900',
+    borderColor: 'border-purple-500',
+    textColor: 'text-purple-400',
+    icon: '🔮',
+    motto: 'From darkness, power!',
+  },
+  ORANGE: {
+    id: 'ORANGE',
+    name: 'Amber Blaze',
+    color: '#F97316',
+    bgGradient: 'from-orange-500 to-orange-800',
+    borderColor: 'border-orange-500',
+    textColor: 'text-orange-400',
+    icon: '🌋',
+    motto: 'Burn bright, burn eternal!',
+  },
+};
+
+export const FACTION_IDS = Object.keys(FACTIONS);
+
+export const getFactionById = (id) => FACTIONS[id] || FACTIONS.RED;
